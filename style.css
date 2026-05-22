@@ -43,6 +43,10 @@ body {
     margin-bottom: 16px;
 }
 
+.eyebrow-center {
+    text-align: center;
+}
+
 .body-text {
     color: var(--text-muted);
     font-size: 16px;
@@ -107,4 +111,150 @@ body {
     font-size: 15px;
     max-width: 360px;
     margin: 22px auto 0;
+}
+
+/* ===== About ===== */
+.about {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-section) 24px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+/* ===== Players ===== */
+.players {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--space-section) 24px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.player-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.player-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+}
+
+.player-card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.stat {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+}
+
+.stat-number {
+    display: block;
+    font-size: 34px;
+    font-weight: 300;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+}
+
+/* ===== Facts ===== */
+.facts {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--space-section) 24px;
+    text-align: center;
+}
+
+.facts h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.fact-list {
+    list-style: none;
+    text-align: left;
+}
+
+.fact-list li {
+    color: var(--text-muted);
+    font-size: 16px;
+    padding: 16px 0 16px 28px;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+}
+
+.fact-list li:last-child {
+    border-bottom: none;
+}
+
+.fact-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--accent);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding: 40px 24px;
+    color: var(--text-faint);
+    font-size: 14px;
+}
+
+/* ===== Responsiveness ===== */
+@media (max-width: 600px) {
+    .hero-title {
+        font-size: 52px;
+    }
+
+    .hero {
+        padding: 80px 20px 70px;
+    }
+
+    .site-nav {
+        padding: 16px 20px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .about h2,
+    .facts h2 {
+        font-size: 24px;
+    }
 }
