@@ -47,3 +47,64 @@ body {
     color: var(--text-muted);
     font-size: 16px;
 }
+
+/* ===== Navigation ===== */
+.site-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background-color: var(--bg);
+    z-index: 10;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+}
+
+.logo-dot {
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text);
+}
+
+/* ===== Hero ===== */
+.hero {
+    text-align: center;
+    padding: 110px 24px 90px;
+    background: radial-gradient(circle at 50% 0%, rgba(77, 208, 160, 0.12), transparent 70%);
+}
+
+.hero-title {
+    font-size: 72px;
+    font-weight: 200;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.hero-sub {
+    color: var(--text-muted);
+    font-size: 15px;
+    max-width: 360px;
+    margin: 22px auto 0;
+}
