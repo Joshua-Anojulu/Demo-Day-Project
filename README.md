@@ -1,29 +1,29 @@
 # Soccer — Informational Web Page
 
-A single-page informational website about soccer, built as a front-end project
-during the All Star Code Summer Intensive program. The page presents a personal
-introduction to the sport, profiles of well-known players, and a set of fun facts,
-organized into clean, navigable sections.
+A responsive, single-page website about soccer, originally created during the
+All Star Code Summer Intensive and fully redesigned with a modern dark theme.
+The page shares a personal introduction to the sport, profiles of two famous
+players, and a set of fun facts.
 
-## Features
+🔗 **Live site:** https://joshua-anojulu.github.io/Demo-Day-Project/
 
-- Fixed top navigation with smooth-scroll anchor links to each section
-- Hover effects on navigation items using opacity transitions
-- Color-blocked content sections for visual separation
-- Centered, readable layout built with Flexbox
+## Highlights
+
+- **Responsive layout** that adapts cleanly from desktop to mobile using CSS Grid and media queries
+- **Design system** built on CSS custom properties (variables) for consistent color, typography, and spacing
+- **Sticky navigation** with smooth-scroll anchor links and hover transitions
+- **Interactive player cards** with hover lift and accent-glow effects
+- **Semantic HTML5** structure (`header`, `main`, `section`, `article`, `footer`) for accessibility and clarity
 
 ## Built With
 
-- HTML5 (semantic structure and anchor-based navigation)
-- CSS3 (Flexbox, hover states, smooth scrolling, custom color palette)
+- HTML5 — semantic, accessible structure
+- CSS3 — custom properties, Flexbox, Grid, transitions, and responsive media queries
+- Google Fonts (Inter)
 
 ## About
 
-This was an early project from my time in the All Star Code program, where I
-completed an intensive front-end web development course. It reflects the
-foundational HTML and CSS skills I built there.
-
-## Viewing the Site
-
-Open `index.html` in any web browser, or view it live via GitHub Pages
-(Settings → Pages → deploy from the main branch).
+This project began as one of my first web development exercises and later became
+a chance to rebuild something from the ground up with a more professional design
+and modern CSS techniques. It reflects the front-end fundamentals I've developed
+and my interest in clean, thoughtful interface design.
