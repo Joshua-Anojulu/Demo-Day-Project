@@ -3,71 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soccer — Joshua Anojulu</title>
+    <title>Soccer · Joshua Anojulu</title>
+    <meta name="description" content="A personal page about soccer: why the game matters to me, two of its greatest players, and a few facts worth knowing.">
+    <meta name="theme-color" content="#07130C">
+    <meta property="og:title" content="Soccer · Joshua Anojulu">
+    <meta property="og:description" content="The beautiful game, under the floodlights.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header class="site-nav">
         <span class="logo">SOCCER<span class="logo-dot">.</span></span>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Page sections">
             <a href="#about">About</a>
             <a href="#players">Players</a>
             <a href="#facts">Facts</a>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <p class="eyebrow">The Beautiful Game</p>
-            <h1 class="hero-title">Soccer</h1>
-            <p class="hero-sub">A lifelong passion, the world's greatest sport, and the game that shaped who I am.</p>
+    <main id="main">
+        <!-- ===== Hero: the pitch under floodlights ===== -->
+        <section class="hero" aria-label="Introduction">
+            <svg class="pitch-lines" viewBox="0 0 1440 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+                <g fill="none" stroke="currentColor" stroke-width="1.5">
+                    <!-- halfway line -->
+                    <line x1="0" y1="400" x2="1440" y2="400" />
+                    <!-- center circle and spot -->
+                    <circle cx="720" cy="400" r="238" />
+                    <circle cx="720" cy="400" r="4" fill="currentColor" stroke="none" />
+                    <!-- corner arcs -->
+                    <path d="M 0 110 A 110 110 0 0 0 110 0" />
+                    <path d="M 1330 0 A 110 110 0 0 0 1440 110" />
+                </g>
+            </svg>
+
+            <div class="hero-inner">
+                <p class="eyebrow">The Beautiful Game</p>
+                <h1 class="hero-title">Soccer</h1>
+                <p class="hero-sub">A lifelong passion, the world's greatest sport, and the game that shaped who I am.</p>
+            </div>
+
+            <a class="kickoff" href="#about">Kick off <span aria-hidden="true">&darr;</span></a>
         </section>
 
+        <!-- ===== Match ticker ===== -->
+        <div class="ticker" aria-label="Quick stats ticker">
+            <div class="ticker-track">
+                <ul class="ticker-list">
+                    <li>973 career goals</li>
+                    <li>8&times; Ballon d'Or</li>
+                    <li>Codified 1863</li>
+                    <li>5 World Cups for Brazil</li>
+                    <li>90 minutes</li>
+                    <li>32 panels, 1 ball</li>
+                </ul>
+                <ul class="ticker-list" aria-hidden="true">
+                    <li>973 career goals</li>
+                    <li>8&times; Ballon d'Or</li>
+                    <li>Codified 1863</li>
+                    <li>5 World Cups for Brazil</li>
+                    <li>90 minutes</li>
+                    <li>32 panels, 1 ball</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===== About ===== -->
         <section class="about reveal" id="about">
             <p class="eyebrow">About</p>
             <h2>How soccer resonates with me</h2>
-            <p class="body-text">Some of my earliest memories are of a soccer ball at my feet and my dad showing me how to strike it. We'd play in the yard until the light gave out, and somewhere in those evenings the game stopped being something I did and became part of who I am. Soccer is where I made my closest friends, where my family grew closer, and where I learned that a hard day could disappear the moment I stepped onto the field. It has never just been a sport to me. It's the thing that shaped me.</p>
+            <p class="body-text">Some of my earliest memories are of a soccer ball at my feet and my dad showing me how to strike it. We'd play in the yard until the light gave out, and somewhere in those evenings the game stopped being something I did and became part of who I am. Soccer is where I made my closest friends, where my family grew closer, and where I learned that a hard day could disappear the moment I stepped onto the field. It has never just been a sport to me.</p>
+            <p class="pull-quote">It's the thing that shaped me.</p>
         </section>
 
+        <!-- ===== Players ===== -->
         <section class="players reveal" id="players">
-            <p class="eyebrow eyebrow-center">Famous Players</p>
+            <header class="section-head">
+                <p class="eyebrow">Famous Players</p>
+                <h2>The legends</h2>
+            </header>
             <div class="card-grid">
                 <article class="player-card">
+                    <span class="kit-number" aria-hidden="true">7</span>
+                    <p class="card-meta">Forward &middot; Portugal</p>
                     <h3>Cristiano Ronaldo</h3>
                     <p class="body-text">Widely regarded as one of the greatest of all time, known for his incredible physique, speed, and dribbling. He has won the UEFA European Championship and been awarded five Ballon d'Or titles.</p>
                     <div class="stat">
-                        <span class="stat-number">973</span>
+                        <span class="stat-number" data-count="973">973</span>
                         <span class="stat-label">career goals</span>
                     </div>
                 </article>
                 <article class="player-card">
+                    <span class="kit-number" aria-hidden="true">10</span>
+                    <p class="card-meta">Forward &middot; Argentina</p>
                     <h3>Lionel Messi</h3>
                     <p class="body-text">A world-renowned player celebrated for his vision, dribbling, and ability to elevate his entire team. He has won the World Cup, soccer's largest competition, along with a record number of Ballon d'Or awards.</p>
                     <div class="stat">
-                        <span class="stat-number">8&times;</span>
+                        <span class="stat-number" data-count="8" data-suffix="&times;">8&times;</span>
                         <span class="stat-label">Ballon d'Or</span>
                     </div>
                 </article>
             </div>
         </section>
 
+        <!-- ===== Facts ===== -->
         <section class="facts reveal" id="facts">
-            <p class="eyebrow">Fun Facts</p>
-            <h2>Did you know?</h2>
-            <ul class="fact-list">
-                <li>The earliest form of modern soccer was created in 1863 in England.</li>
-                <li>A soccer ball looks like a sphere, but is actually a truncated icosahedron.</li>
-                <li>Cristiano Ronaldo has scored over 973 goals across more than 1,320 professional games.</li>
-                <li>Brazil holds the most World Cup titles, with five tournament wins.</li>
-            </ul>
+            <div class="facts-grid">
+                <figure class="ball-figure">
+                    <svg class="ball" viewBox="0 0 220 220" role="img" aria-label="Wireframe drawing of a soccer ball, a truncated icosahedron">
+                        <g class="ball-rotor">
+                            <g transform="translate(110,110)" fill="none" stroke-linejoin="round">
+                                <circle r="98" class="ball-line" />
+                                <!-- rim pentagon -->
+                                <polygon class="ball-line" points="-55.8,-76.9 55.8,-76.9 90.3,29.4 0,95 -90.3,29.4" />
+                                <!-- spokes from inner pentagon to joints -->
+                                <g class="ball-line">
+                                    <line x1="0" y1="-32" x2="0" y2="-64" />
+                                    <line x1="30.4" y1="-9.9" x2="60.9" y2="-19.8" />
+                                    <line x1="18.8" y1="25.9" x2="37.6" y2="51.8" />
+                                    <line x1="-18.8" y1="25.9" x2="-37.6" y2="51.8" />
+                                    <line x1="-30.4" y1="-9.9" x2="-60.9" y2="-19.8" />
+                                </g>
+                                <!-- joints out to rim pentagon corners -->
+                                <g class="ball-line">
+                                    <line x1="0" y1="-64" x2="-55.8" y2="-76.9" />
+                                    <line x1="0" y1="-64" x2="55.8" y2="-76.9" />
+                                    <line x1="60.9" y1="-19.8" x2="55.8" y2="-76.9" />
+                                    <line x1="60.9" y1="-19.8" x2="90.3" y2="29.4" />
+                                    <line x1="37.6" y1="51.8" x2="90.3" y2="29.4" />
+                                    <line x1="37.6" y1="51.8" x2="0" y2="95" />
+                                    <line x1="-37.6" y1="51.8" x2="0" y2="95" />
+                                    <line x1="-37.6" y1="51.8" x2="-90.3" y2="29.4" />
+                                    <line x1="-60.9" y1="-19.8" x2="-90.3" y2="29.4" />
+                                    <line x1="-60.9" y1="-19.8" x2="-55.8" y2="-76.9" />
+                                </g>
+                                <!-- center pentagon -->
+                                <polygon class="ball-pentagon" points="0,-32 30.4,-9.9 18.8,25.9 -18.8,25.9 -30.4,-9.9" />
+                            </g>
+                        </g>
+                    </svg>
+                    <figcaption class="ball-caption">32 panels &middot; 12 pentagons &middot; 20 hexagons</figcaption>
+                </figure>
+
+                <div class="facts-content">
+                    <p class="eyebrow">Fun Facts</p>
+                    <h2>Did you know?</h2>
+                    <ul class="fact-list">
+                        <li>The earliest form of modern soccer was created in 1863 in England.</li>
+                        <li>A soccer ball looks like a sphere, but is actually a truncated icosahedron.</li>
+                        <li>Cristiano Ronaldo has scored over 973 goals across more than 1,320 professional games.</li>
+                        <li>Brazil holds the most World Cup titles, with five tournament wins.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p>Built by Joshua Anojulu &middot; &copy; <span id="year"></span></p>
+        <p class="ft-badge">Full time</p>
+        <p>Built by Joshua Anojulu &middot; &copy; <span id="year"></span> &middot; <a href="https://github.com/Joshua-Anojulu" rel="noopener">GitHub</a></p>
     </footer>
 
     <button id="backToTop" aria-label="Back to top">&uarr;</button>
